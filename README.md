@@ -1,3 +1,5 @@
+# note: T[1] -> T[0]のDropのワークアラウンドとしてpx4_backend_set_powerの設定を変更。
+
 # px4_drv - Unofficial Linux driver for PLEX PX4/PX5/PX-MLT series ISDB-T/S receivers
 
 PLEXやe-Betterから発売された各種ISDB-T/Sチューナー向けのchardev版非公式Linuxドライバです。  
