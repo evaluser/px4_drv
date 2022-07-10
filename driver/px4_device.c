@@ -547,7 +547,7 @@ static int px4_chrdev_release(struct ptx_chrdev *chrdev)
 	if (!px4->open_count) {
 		px4_backend_term(px4);
 		if (!px4->mldev)
-			px4_backend_set_power(px4, false);
+			px4_backend_set_power(px4, true);
 	} else if (atomic_read(&px4->available)) {
 		/* sleep tuners */
 		switch (chrdev->system_cap) {
